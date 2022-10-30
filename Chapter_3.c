@@ -21,3 +21,42 @@ int main() {
 }
 
 Qb
+//even or odd
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter any number: ");
+    scanf("%d", &a);
+    if(a%2==0)
+    {
+        printf("Entered number is Even");
+    }
+    else
+    {
+        printf("Entered number is Odd");
+    }
+    return 0;
+}
+
+Qc
+// leap year
+#include <stdio.h>
+
+int main() {
+   int year;
+   printf("Enter year: ");
+   scanf("%d",&year);
+
+   if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
+      {
+          printf("%d is a leap year", year);
+      }   
+   else
+      {
+          printf("%d is not a leap year", year);
+      }
+   return 0;
+}
+
+Qd
