@@ -60,3 +60,32 @@ int main() {
 }
 
 Qd
+
+Qe
+// Reverse of digits
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+    int i,j,num,reverse_n=0,n;
+    printf("enter a five digit number: ");
+    scanf("%d",&num);
+    n=num;
+    for(i=4;i>=0;i--)
+    {
+        j=num%10;
+        num=num/10;
+        reverse_n=reverse_n+j*pow(10,i);
+        
+    }
+    printf("The reverse of digits is equal to: %d\n",reverse_n);
+    if(reverse_n !=n)
+    {
+        printf("numbers are not equal");
+    }
+    else
+    {
+        printf("numbers are equal");
+    }
+    return 0;
+}
