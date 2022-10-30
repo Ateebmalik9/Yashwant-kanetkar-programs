@@ -186,3 +186,82 @@ int main()
     }
     return 0;
 }
+
+Qj
+//collinearity
+#include <stdio.h>
+
+int main() 
+{
+    float x1,x2,x3,y1,y2,y3,m1,m2;
+    printf("Enter (x1,y1): ");
+    scanf("%f%f", &x1,&y1);
+    printf("Enter (x2,y2): ");
+    scanf("%f%f", &x2,&y2);
+    printf("Enter (x3,y3): ");
+    scanf("%f%f", &x3,&y3);
+    
+    m1=(y2-y1)/(x2-x1);
+    m2=(y3-y2)/(x3-x2);
+    printf("%f %f",m1,m2);
+    if(m2==m1)
+    {
+        printf("Collinear");
+    }
+    else
+    {
+        printf("Not collinear");
+    }
+    
+    return 0;
+}
+
+Qk
+// point and circle
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int x1, y1, x2, y2, r;
+    float d;
+
+    printf("Enter the co-ordinates of the centre of circle: ");
+    scanf("%d %d", &x1, &y1);
+    printf("Enter the radius of the circle: ");
+    scanf("%d", &r);
+
+    printf("Enter the co-ordinates of point: ");
+    scanf("%d %d", &x2, &y2);
+
+    d= sqrt(pow(x2-x1, 2)+pow(y2-y1,2));
+
+    if(d>r)
+        printf("Point (%d,%d) lies outside the circle.", x2, y2);
+    else if(d<r)
+        printf("Point (%d,%d) lies inside the circle.", x2, y2);
+    else if(d==r)
+        printf("Point (%d,%d) lies on the boundary of circle.", x2, y2);
+    return 0;
+}
+
+Ql
+// point location
+#include<stdio.h>
+int main()
+{
+    int x1, y1;
+
+    printf("Enter the co-ordinates: ");
+    scanf("%d %d", &x1, &y1);
+
+    if(x1==0 && y1!=0)
+        printf("Point (%d,%d) lies on y-axis.", x1, y1);
+    else if(x1!=0 && y1==0)
+        printf("Point (%d,%d) lies on x-axis.", x1, y1);
+    else if(x1==0 && y1==0)
+        printf("Point (%d,%d) lies on origin.", x1, y1);
+    else
+        printf("point (%d,%d) lies in x-y plane",x1, y1);
+    return 0;
+}
+
