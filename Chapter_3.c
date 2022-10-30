@@ -89,3 +89,77 @@ int main() {
     }
     return 0;
 }
+
+Qf
+//age comparison
+#include <stdio.h>
+
+int main() 
+{
+    int ajay,ram,shyam;
+    printf("Enter age of Ajay: ");
+    scanf("%d", &ajay);
+    printf("Enter age of Shyam: ");
+    scanf("%d", &shyam);
+    printf("Enter age of Ram: ");
+    scanf("%d", &ram);
+    if(ajay<shyam && ajay<ram)
+    {
+     printf("Ajay is youngest");
+    }
+    else if(shyam<ajay && shyam<ram)
+    {
+     printf("Shyam is youngest");
+    }
+    else
+    {
+     printf("Ram is youngest");
+    }
+    return 0;
+}
+
+Qg
+//triangle
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,c,sum;
+    printf("Enter angle a: ");
+    scanf("%d", &a);
+    printf("Enter angle b: ");
+    scanf("%d", &b);
+    printf("Enter angle c: ");
+    scanf("%d", &c);
+    sum=a+b+c;
+    if(sum!=180)
+    {
+     printf("not a valid triangle");
+    }
+    else
+    {
+     printf("valid triangle");
+    }
+    return 0;
+}
+
+Qh
+//absolute value
+#include <stdio.h>
+
+int main() 
+{
+    int num;
+    printf("Enter num: ");
+    scanf("%d", &num);
+    
+    if(num<0)
+    {
+     printf("absolute value of number is %d",(-1)*num);
+    }
+    else
+    {
+     printf("absolute value of number is %d",num);
+    }
+    return 0;
+}
