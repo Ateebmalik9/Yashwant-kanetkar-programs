@@ -163,3 +163,26 @@ int main()
     }
     return 0;
 }
+
+Qi
+//area vs perimeter
+#include <stdio.h>
+
+int main() 
+{
+    int l,b,ar,pr;
+    printf("Enter length and breadth: ");
+    scanf("%d%d", &l,&b);
+    
+    ar=l*b;
+    pr=2*(l+b);
+    if(ar<pr)
+    {
+     printf("Area is less than perimeter");
+    }
+    else
+    {
+     printf("Area is greater than perimeter");
+    }
+    return 0;
+}
